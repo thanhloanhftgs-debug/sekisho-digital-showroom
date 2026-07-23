@@ -597,14 +597,14 @@ function openProduct(id) {
   if (!p) return;
 
   const specs = [
-  [translations[currentLang].detail_showroom, p.showroom],
-  [translations[currentLang].detail_category, p.category],
+  [translations[currentLang].detail_showroom, showroomName(p.showroom)],
+  [translations[currentLang].detail_category, categoryName(p.category)],
   [translations[currentLang].detail_product_type, p.product_type],
   [translations[currentLang].detail_net_weight_size, p.net_weight_or_size],
   [translations[currentLang].detail_material, p.material],
   [translations[currentLang].detail_shelf_life, p.shelf_life],
-  [translations[currentLang].detail_storage, p.storage],
-  [translations[currentLang].detail_origin, p.origin],
+  [translations[currentLang].detail_storage, storageName(p.storage)],
+  [translations[currentLang].detail_origin, originName(p.origin)],
   [translations[currentLang].detail_maker_artisan, p.maker_or_artisan],
   [translations[currentLang].detail_moq, p.moq],
   [translations[currentLang].detail_price, p.price],
