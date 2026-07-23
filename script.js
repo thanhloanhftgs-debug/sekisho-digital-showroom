@@ -64,6 +64,97 @@ image: "assets/images/showroom-craft.jpg",
   }
 ];
 
+const valueTranslations = {
+  category: {
+    "Tea": {
+      ja: "お茶",
+      en: "Tea",
+      vi: "Trà"
+    },
+    "Green Tea": {
+      ja: "緑茶",
+      en: "Green Tea",
+      vi: "Trà xanh"
+    },
+    "Seasoning": {
+      ja: "調味料",
+      en: "Seasoning",
+      vi: "Gia vị"
+    },
+    "Frozen Food": {
+      ja: "冷凍食品",
+      en: "Frozen Food",
+      vi: "Thực phẩm đông lạnh"
+    },
+    "Sweets": {
+      ja: "菓子・スイーツ",
+      en: "Sweets",
+      vi: "Bánh kẹo"
+    },
+    "Noodles": {
+      ja: "麺類",
+      en: "Noodles",
+      vi: "Mì"
+    },
+    "Beverage": {
+      ja: "飲料",
+      en: "Beverage",
+      vi: "Đồ uống"
+    },
+    "Tableware": {
+      ja: "食器",
+      en: "Tableware",
+      vi: "Đồ dùng bàn ăn"
+    },
+    "Textile": {
+      ja: "繊維製品",
+      en: "Textile",
+      vi: "Sản phẩm dệt may"
+    },
+    "Glassware": {
+      ja: "ガラス製品",
+      en: "Glassware",
+      vi: "Sản phẩm thủy tinh"
+    },
+    "Equipment": {
+      ja: "設備",
+      en: "Equipment",
+      vi: "Thiết bị"
+    }
+  },
+
+  storage: {
+    "Room temperature": {
+      ja: "常温",
+      en: "Room temperature",
+      vi: "Nhiệt độ thường"
+    },
+    "Ambient": {
+      ja: "常温",
+      en: "Ambient",
+      vi: "Nhiệt độ thường"
+    },
+    "Refrigerated": {
+      ja: "冷蔵",
+      en: "Refrigerated",
+      vi: "Bảo quản lạnh"
+    },
+    "Frozen": {
+      ja: "冷凍",
+      en: "Frozen",
+      vi: "Bảo quản đông lạnh"
+    }
+  },
+
+  origin: {
+    "Japan": {
+      ja: "日本",
+      en: "Japan",
+      vi: "Nhật Bản"
+    }
+  }
+};
+
 const translations = {
   ja: {
     nav_home: "ホーム", nav_showrooms: "ショールーム", nav_company: "会社情報", nav_contact: "お問い合わせ",
@@ -90,7 +181,22 @@ contact_tel_label: "電話：",
 contact_address_label: "住所：",
 footer_text: "© 関彰商事株式会社｜ビジネストランスフォーメーション部 海外事業統括 貿易課",
     search: "商品名で検索...", all_showrooms: "全ショールーム", all_categories: "全カテゴリー",
-    result: "件の商品", empty: "該当する商品がありません。", inquiry: "見積依頼"
+    result: "件の商品", empty: "該当する商品がありません。", inquiry: "見積依頼",
+	  detail_product_id: "商品ID",
+detail_showroom: "ショールーム",
+detail_category: "カテゴリー",
+detail_product_type: "商品タイプ",
+detail_net_weight_size: "内容量・サイズ",
+detail_material: "素材",
+detail_shelf_life: "賞味期限",
+detail_storage: "保存方法",
+detail_origin: "原産国",
+detail_maker_artisan: "メーカー・職人",
+detail_moq: "最小発注数量（MOQ）",
+detail_price: "価格",
+detail_usage_scene: "使用シーン",
+detail_allergy_notes: "アレルギー・注意事項",
+detail_pdf: "PDFカタログ",
   },
   en: {
     nav_home: "Home", nav_showrooms: "Showrooms", nav_company: "Company", nav_contact: "Contact",
@@ -117,7 +223,22 @@ contact_tel_label: "Tel:",
 contact_address_label: "Address:",
 footer_text: "© Sekisho Corporation | Business Transformation Department | International Operations | Foreign Trade Section",
     search: "Search products...", all_showrooms: "All Showrooms", all_categories: "All Categories",
-    result: "products", empty: "No products found.", inquiry: "Request Quotation"
+    result: "products", empty: "No products found.", inquiry: "Request Quotation",
+	detail_product_id: "Product ID",
+detail_showroom: "Showroom",
+detail_category: "Category",
+detail_product_type: "Product Type",
+detail_net_weight_size: "Net Weight / Size",
+detail_material: "Material",
+detail_shelf_life: "Shelf Life",
+detail_storage: "Storage",
+detail_origin: "Country of Origin",
+detail_maker_artisan: "Maker / Artisan",
+detail_moq: "Minimum Order Quantity (MOQ)",
+detail_price: "Price",
+detail_usage_scene: "Usage Scene",
+detail_allergy_notes: "Allergy / Notes",
+detail_pdf: "PDF Catalog",
   },
   vi: {
     nav_home: "Trang chủ", nav_showrooms: "Showrooms", nav_company: "Công ty",nav_contact: "Liên hệ",
@@ -144,7 +265,22 @@ contact_tel_label: "Điện thoại:",
 contact_address_label: "Địa chỉ:",
 footer_text: "© Công ty Sekisho | Khối Chuyển đổi Kinh doanh | Quản lý Kinh doanh Hải ngoại | Phòng Thương mại Quốc tế",
     search: "Tìm kiếm sản phẩm...", all_showrooms: "Tất cả showroom", all_categories: "Tất cả danh mục",
-    result: "sản phẩm", empty: "Không tìm thấy sản phẩm phù hợp.", inquiry: "Yêu cầu báo giá"
+    result: "sản phẩm", empty: "Không tìm thấy sản phẩm phù hợp.", inquiry: "Yêu cầu báo giá",
+	  detail_product_id: "Mã sản phẩm",
+detail_showroom: "Showroom",
+detail_category: "Danh mục",
+detail_product_type: "Loại sản phẩm",
+detail_net_weight_size: "Khối lượng / Kích thước",
+detail_material: "Chất liệu",
+detail_shelf_life: "Hạn sử dụng",
+detail_storage: "Điều kiện bảo quản",
+detail_origin: "Xuất xứ",
+detail_maker_artisan: "Nhà sản xuất / Nghệ nhân",
+detail_moq: "Số lượng đặt hàng tối thiểu (MOQ)",
+detail_price: "Giá",
+detail_usage_scene: "Mục đích sử dụng",
+detail_allergy_notes: "Dị ứng / Lưu ý",
+detail_pdf: "Catalog PDF",
   }
 };
 
@@ -320,7 +456,7 @@ function rebuildCategoryFilter() {
   categories.forEach(category => {
     const option = document.createElement("option");
     option.value = category;
-    option.textContent = category;
+    option.textContent = categoryName(category);
     categoryFilter.appendChild(option);
   });
 }
@@ -338,13 +474,13 @@ function renderTitle() {
   const label = document.getElementById("currentShowroomLabel");
 
   if (selected === "all") {
-    title.textContent = translations[currentLang].all_products;
-    label.textContent = "All Showrooms";
-  } else {
-    const showroom = showrooms.find(s => s.key === selected);
-    title.textContent = showroom ? showroom.title[currentLang] : selected;
-    label.textContent = selected;
-  }
+  title.textContent = translations[currentLang].all_products;
+  label.textContent = translations[currentLang].all_showrooms;
+} else {
+  const showroom = showrooms.find(s => s.key === selected);
+  title.textContent = showroom ? showroom.title[currentLang] : selected;
+  label.textContent = showroomName(selected);
+}
 }
 
 function filteredProducts() {
@@ -391,6 +527,40 @@ function updatePdfButton() {
   button.href = productWithPdf && productWithPdf.pdf_link ? productWithPdf.pdf_link : "#";
 }
 
+function showroomName(value) {
+  const showroom = showrooms.find(s => s.key === value);
+
+  if (showroom && showroom.title[currentLang]) {
+    return showroom.title[currentLang];
+  }
+
+  return value || "";
+}
+
+function translatedValue(group, value) {
+  if (!value) return "";
+
+  const item = valueTranslations[group]?.[value];
+
+  if (item && item[currentLang]) {
+    return item[currentLang];
+  }
+
+  return value;
+}
+
+function categoryName(value) {
+  return translatedValue("category", value);
+}
+
+function storageName(value) {
+  return translatedValue("storage", value);
+}
+
+function originName(value) {
+  return translatedValue("origin", value);
+}
+
 function productName(p) {
   if (currentLang === "ja") return p.name_ja || p.name_en;
   if (currentLang === "vi") return p.name_vi || p.name_en;
@@ -414,8 +584,8 @@ function productCard(p) {
         <h3>${productName(p)}</h3>
         <p class="en">${p.name_en || ""}</p>
         <div class="product-meta">
-          ${p.showroom ? `<span class="tag">${p.showroom}</span>` : ""}
-          ${p.category ? `<span class="tag">${p.category}</span>` : ""}
+          ${p.showroom ? `<span class="tag">${showroomName(p.showroom)}</span>` : ""}
+          ${p.category ? `<span class="tag">${categoryName(p.category)}</span>` : ""}
         </div>
       </div>
     </article>
@@ -427,20 +597,20 @@ function openProduct(id) {
   if (!p) return;
 
   const specs = [
-    ["Showroom", p.showroom],
-    ["Category", p.category],
-    ["Product Type", p.product_type],
-    ["Net weight / Size", p.net_weight_or_size],
-    ["Material", p.material],
-    ["Shelf life", p.shelf_life],
-    ["Storage", p.storage],
-    ["Origin", p.origin],
-    ["Maker / Artisan", p.maker_or_artisan],
-    ["MOQ", p.moq],
-    ["Price", p.price],
-    ["Usage Scene", p.usage_scene],
-    ["Allergy / Notes", p.allergy_or_notes]
-  ].filter(row => row[1]);
+  [translations[currentLang].detail_showroom, p.showroom],
+  [translations[currentLang].detail_category, p.category],
+  [translations[currentLang].detail_product_type, p.product_type],
+  [translations[currentLang].detail_net_weight_size, p.net_weight_or_size],
+  [translations[currentLang].detail_material, p.material],
+  [translations[currentLang].detail_shelf_life, p.shelf_life],
+  [translations[currentLang].detail_storage, p.storage],
+  [translations[currentLang].detail_origin, p.origin],
+  [translations[currentLang].detail_maker_artisan, p.maker_or_artisan],
+  [translations[currentLang].detail_moq, p.moq],
+  [translations[currentLang].detail_price, p.price],
+  [translations[currentLang].detail_usage_scene, p.usage_scene],
+  [translations[currentLang].detail_allergy_notes, p.allergy_or_notes]
+].filter(row => row[1]);
 
   document.getElementById("modalContent").innerHTML = `
     <div class="modal-grid">
@@ -448,12 +618,12 @@ function openProduct(id) {
         <img src="${p.image || "assets/images/placeholder-product.svg"}" alt="${productName(p)}">
       </div>
       <div>
-        <p class="eyebrow">${p.showroom || ""}</p>
+        <p class="eyebrow">${showroomName(p.showroom)}</p>
         <h2>${productName(p)}</h2>
         <p>${description(p) || ""}</p>
 
         <table class="spec-table">
-          <tr><th>Product ID</th><td>${p.id}</td></tr>
+          <tr><th>${translations[currentLang].detail_product_id}</th><td>${p.id}</td></tr>
           ${specs.map(([key, value]) => `<tr><th>${key}</th><td>${value}</td></tr>`).join("")}
         </table>
 
